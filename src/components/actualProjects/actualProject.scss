@@ -1,0 +1,17 @@
+.aProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    h2{
+        margin:1rem 0;
+    }
+    .projectsContainer {
+        width: 100%;
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
