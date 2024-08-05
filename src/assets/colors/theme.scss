@@ -1,0 +1,39 @@
+/* @import "./colors.scss";
+
+$light-theme: (
+    primary-color: $primary-L-color,
+    secondary-color: $main-Black,
+);
+
+$dark-theme: (
+    primary-color: $primary-D-color,
+    secondary-color: $main-White,
+);
+
+@mixin theme($theme) {
+    $primary-color: map-get($theme, primary-color);
+    $secondary-color: map-get($theme, secondary-color);
+
+    body {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+
+    .button {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}
+ */
+@import "./colors.scss";
+
+@mixin lightTheme {
+    background-color: $primary-L-color;
+    color: $main-Black;
+}
+
+@mixin darkTheme {
+    background-color: $primary-D-color;
+    color: $main-White;
+}

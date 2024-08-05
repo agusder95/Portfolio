@@ -1,0 +1,16 @@
+
+.test {
+     margin-top: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+     
+     .test-child{
+          width: 320px;
+          height: 250px;
+          color: black;
+          background-color: wheat;
+     }
+}
