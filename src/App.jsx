@@ -4,6 +4,7 @@ import Header from "./components/header/header";
 import Test from "./components/test/test";
 import ThemeContext from "./context/ThemeContext";
 import Projects from "./components/projects/projects";
+import Technologies from "./components/technologies/technologies";
 
 function App() {
     const { theme } = useContext(ThemeContext);
@@ -12,7 +13,9 @@ function App() {
             <div className="container" >
                 <Header />
                 <Projects />
+                <Technologies />
                 <Test />
+                
             </div>
             <div className="resolution">
                 <p>Sorry, the resolution is not supported</p>

@@ -38,16 +38,19 @@
         justify-content: center;
         align-items: center;
         margin-top:2rem;
+        height: 20px;
         .indicator{
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #7c63a5;
+            background-color: #4754ca;
             margin: 0 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease-in;
+            transition: .4s ease;
+            /* transition: background-color 0.3s ease-in; */
             &.active{
-                background-color: #49d49f;
+                background-color: #ffffff;
+                border:1px solid #4754ca;
                 width: 15px;
                 height: 15px;
             }
