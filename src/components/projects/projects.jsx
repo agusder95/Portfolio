@@ -1,24 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./styles.scss";
 
 import ActualProject from "../actualProjects/actualProject";
 import FinishProjects from "../finishProjects/finishProjects";
+import WidthContext from "../../context/widthContext";
+
 const Projects = () => {
-    const [isLargeScreen, setIsLargeScreen] = React.useState(
-        window.innerWidth > 1080
-    );
+    const [isLargeScreen, setIsLargeScreen] = useState();
+    const { width } = useContext(WidthContext);
 
     React.useEffect(() => {
-        const handleResize = () => {
-            setIsLargeScreen(window.innerWidth > 1080);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+        setIsLargeScreen(width > 1080);
+    }, [width]);
 
     return (
         <div className="projects">
