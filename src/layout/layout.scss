@@ -1,0 +1,33 @@
+@import "../assets/colors/theme.scss";
+
+.layout {
+    /* min-height: 100vh; */
+    .container {
+        max-width: 1980px;
+        margin: 0 auto;
+
+        @media screen and (max-width : 319px) {
+            display: none;
+        }
+    }
+    .resolution{
+        display: none;
+        @media screen and (max-width : 319px) {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &[data-theme="light"] {
+        @include lightTheme;
+    }
+    &[data-theme="dark"] {
+        @include darkTheme;
+    }
+
+    .mainContent{
+        min-height: 94vh;
+    }
+}
