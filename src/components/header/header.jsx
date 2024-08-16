@@ -1,26 +1,27 @@
 import React, { useContext, useState } from "react";
 import "./styles.scss";
 import ThemeContext from "../../context/ThemeContext";
-import Switch from "@mui/material/Switch";
 
+import { IconContext } from "react-icons";
+import { FaAdjust } from "react-icons/fa";
 const Header = () => {
     const { theme, setTheme } = useContext(ThemeContext);
 
-    const handleChange = (event) => {
-        setTheme(event.target.checked ? "dark" : "light");
+    const handleChange = () => {
+        setTheme((prev) => (prev === "light" ? "dark" : "light"));
     };
 
     return (
         <header className="header" data-theme={theme}>
             <h1>Theme Switcher</h1>
             <div className="switch">
-                <p>Theme</p>
-                <Switch
-                    className="switch-input"
-                    checked={theme === "dark" ? true : false}
-                    onChange={handleChange}
-                    color="primary"
-                />
+                <div className="switch-input" onClick={handleChange}>
+                    <IconContext.Provider
+                        value={{ className: "react-icons", size: "100%" }}
+                    >
+                        <FaAdjust className="themebtn" theme-active={theme} />
+                    </IconContext.Provider>
+                </div>
             </div>
         </header>
     );

@@ -10,10 +10,11 @@ const MyRoutes = () => {
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    {/* <Route path="/resume" element={<About />} />
+                    <Route path="/projects" element={<Services />} />
+                    <Route path="/skills" element={<Contact />} /> */}
                     <Route path="/contact" element={<Contact />} />
-                    {/* <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} /> */}
+                    {/* <Route path="*" element={<Home />} /> */}
                 </Routes>
             </Layout>
         </Router>
