@@ -3,7 +3,8 @@
 .layout {
     /* min-height: 100vh; */
     /* position: relative; */
-    .container {
+    
+    /* .container {
         max-width: 1980px;
         margin: 0 auto;
 
@@ -20,7 +21,7 @@
             align-items: center;
             text-align: center;
         }
-    }
+    } */
     &[data-theme="light"] {
         @include lightTheme;
     }
@@ -29,6 +30,9 @@
     }
 
     .mainContent{
+        max-width: 1384px;
+
+        margin: auto;
         min-height: 94vh;
     }
 }

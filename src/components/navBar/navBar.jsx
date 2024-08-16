@@ -27,7 +27,7 @@ const NavBar = () => {
                     onClick={() => handleClick("/resume")}
                 />
                 <HiTemplate
-                    className={currentPath === "projects" ? "active" : ""}
+                    className={currentPath === "/projects" ? "active" : ""}
                     onClick={() => handleClick("/projects")}
                 />
                 <HiChip
