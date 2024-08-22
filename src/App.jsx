@@ -5,8 +5,9 @@ import Test from "./components/test/test";
 import ThemeContext from "./context/ThemeContext";
 import Projects from "./components/projects/projects";
 import Technologies from "./components/technologies/technologies";
+import MyRoutes from "./routes/MyRoutes";
 
-function App() {
+/* function App() {
     const { theme } = useContext(ThemeContext);
     return (
         <div className="App" data-theme={theme}>
@@ -22,6 +23,12 @@ function App() {
             </div>
         </div>
     );
+} */
+
+function App() {
+    return(
+        <MyRoutes />
+    )
 }
 
 export default App;

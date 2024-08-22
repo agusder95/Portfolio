@@ -8,25 +8,38 @@
     padding: 1rem;
     border-bottom: 1px solid #ff8a54;
 
-    /* &[data-theme="ligth"] {
-        @include lightTheme;
-    }
-    &[data-theme="dark"] {
-        @include darkTheme;
-    } */
+    @media screen and (min-width: 768px) {
+        padding: 1rem 5rem;
+    };
 
     h1 {
         margin: 0;
     }
 
-    .switch{
+    .switch {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+        p {
             margin: 0;
         }
 
+        .switch-input {
+            width: 20px;
+            height: 20px;
+
+            .themebtn {
+                width: 100%;
+                height: 100%;
+
+                &[theme-active="light"] {
+                    color: black;
+                }
+                &[theme-active="dark"] {
+                    color: white;
+                }
+            }
+        }
     }
 }
