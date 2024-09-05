@@ -1,0 +1,170 @@
+@import "../../assets/colors/colors.scss";
+.contactWrapper {
+    width: 100%;
+
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        align-self: flex-start;
+        margin: 1rem 3rem;
+    }
+
+    .formWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 40rem;
+        }
+        .formcards {
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 2rem 0;
+            margin: 10px;
+            min-height: 520px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            @media screen and (min-width: 1024px) {
+                width: 50%;
+            }
+
+            button {
+                border: 1px solid black;
+                border-radius: 10px;
+                width: 100px;
+                height: 50px;
+            }
+            textarea {
+                border-radius: 15px;
+                height: 100px;
+                width: 90%;
+                padding: 5px 15px;
+                max-width: 500px;
+            }
+            ul{
+                flex-grow: .5;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            li {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                /* width: 100%; */
+
+                .iconContact {
+                    margin-right: 10px;
+                    width: 25px;
+                    height: 25px;
+                }
+                
+                &:hover {
+                    color: $primary-accent-color;
+                }
+                
+            }
+        }
+    }
+}
+
+.centerAlert {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    .alertCopy {
+        text-align: center;
+        position: absolute;
+        min-width: 200px;
+        padding: 12px 9px;
+        border-radius: 15px;
+        background-color: white;
+        color: black;
+        box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.75);
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(128, 128, 128, 0.75);
+    }
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 500px;
+    min-height: 80px;
+    p {
+        margin: 7px 10px;
+    }
+    input {
+        border-radius: 15px;
+        height: 50px;
+        width: 90%;
+        padding: 0.5px 15px;
+        max-width: 500px;
+        &.checkbox {
+            width: 25px;
+            height: 25px;
+            margin-right: 1rem;
+        }
+    }
+    &:nth-child(5) {
+        height: 80px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+.cvDownloadContainer {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    a {
+        cursor: pointer;
+        margin: 10px;
+        border: 1px solid ;
+        border-radius: 15px;
+        padding: 10px;
+        width: 100%;
+        max-width: 150px;
+        &:hover {
+            border-color: $primary-accent-color;
+        }
+    }
+    p {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .imgCvContainer {
+        width: 4rem;
+        height: 4rem;
+        margin: auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

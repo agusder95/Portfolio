@@ -1,0 +1,35 @@
+.TermsWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    /* z-index: 9999;
+    margin-bottom: 4.5rem; */
+    width: 100vw;
+    max-width: 40rem;
+    min-height: 35rem;
+    border:1px solid gray;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    color: black;
+    h2{
+        text-align: center;
+    }
+
+    .termsContainer{
+        height: 20rem;
+        overflow-y: scroll;
+    }
+    
+    button{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 100px;
+        height: 50px;
+
+        &:active{
+            background-color: #757575;
+        }
+    }
+}

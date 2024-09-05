@@ -1,0 +1,33 @@
+@import "../../../assets/colors/theme.scss";
+.spinnerLoaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &[data-theme="light"] {
+        @include lightTheme;
+    }
+    &[data-theme="dark"] {
+        @include darkTheme;
+    }
+
+    .spinnerLoader {
+        width: 50px;
+        height: 50px;
+        border: 7px solid rgb(184, 136, 48);
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 0.5s linear infinite;
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
