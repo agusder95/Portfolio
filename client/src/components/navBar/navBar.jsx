@@ -23,7 +23,7 @@ const NavBar = () => {
                     onClick={() => handleClick("/")}
                 />
                 <HiUser
-                    className={currentPath === "resume" ? "active" : ""}
+                    className={currentPath === "/resume" ? "active" : ""}
                     onClick={() => handleClick("/resume")}
                 />
                 <HiTemplate
@@ -31,7 +31,7 @@ const NavBar = () => {
                     onClick={() => handleClick("/projects")}
                 />
                 <HiChip
-                    className={currentPath === "skills" ? "active" : ""}
+                    className={currentPath === "/skills" ? "active" : ""}
                     onClick={() => handleClick("/skills")}
                 />
                 <HiChatAlt

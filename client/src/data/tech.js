@@ -96,7 +96,7 @@ export const TECH = [
     },
     {
         id: 19,
-        title: "ReactRouter",
+        title: "React Router",
         img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg'
     },
     {

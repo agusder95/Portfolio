@@ -1,0 +1,28 @@
+@import "../../assets/colors/colors.scss";
+.skillsWrapper{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height:100vh ;
+    padding:5rem 0;
+    h1{
+        /* font-size: 2rem; */
+        margin-bottom: 1rem;
+    }
+    h2{
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 2rem;
+    }
+}
+
+.skillsList{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid $boxShadowColor;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: $boxShadow;
+}

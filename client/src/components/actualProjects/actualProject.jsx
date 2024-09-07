@@ -10,7 +10,7 @@ const ActualProjects = ({ desktop }) => {
     );
     return (
         <section className="aProjects">
-            <h2>Projects in Work</h2>
+            <h2>Projects in Process</h2>
             <div
                 className="projectsContainer"
                 style={{ display: desktop ? "flex" : "block" }}
