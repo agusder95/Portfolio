@@ -13,8 +13,9 @@ const Projects = () => {
     }, [width]);
     return (
         <div className="projectsWrapper">
-            <FinishProjects desktop={isMobile} />
             <ActualProjects desktop={isMobile} />
+            <div className="projectsDivider"></div>
+            <FinishProjects desktop={isMobile} />
         </div>
     );
 };

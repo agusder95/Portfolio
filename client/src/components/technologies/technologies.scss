@@ -2,8 +2,8 @@
     height: auto;
     width: 100%;
     max-width: 1000px;
-    margin: auto;
-    margin-bottom: 3rem;
+    margin: 2rem auto 2rem;
+    /* margin-bottom: 3rem; */
     h2 {
         text-align: center;
         margin: 1rem 0;
@@ -37,15 +37,16 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                &[data-theme="light"] {
+                background-color: #ffefe1;
+                /* background-color: #cccccc; */
+                /* &[data-theme="light"] {
                     background-color: #ffefe1;
                     border: 1px solid #b7b7b7;
                 }
                 &[data-theme="dark"] {
                     background-color: #cccccc;
                     border: 1px solid #b7b7b7;
-                }
+                } */
 
                 .textTech{
                     position: absolute;
@@ -67,8 +68,9 @@
                 &:hover {
                     transform: scale(1.15);
                     .textTech{
-
+                        text-align: center;
                         opacity: 1;
+                        font-weight: bolder;
                     }
                     img{
                         opacity: .5;
@@ -80,7 +82,7 @@
     }
     .moreTech {
         margin: 1rem 0 2rem;
-        width: 100vw;
+        /* width: 100vw; */
         height: 0;
         /* box-shadow: 0px -2px 18px 6px #000000cc;
 

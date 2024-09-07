@@ -145,13 +145,14 @@
     a {
         cursor: pointer;
         margin: 10px;
-        border: 1px solid ;
+        border: 1px solid $boxShadowColor;
         border-radius: 15px;
         padding: 10px;
         width: 100%;
         max-width: 150px;
         &:hover {
-            border-color: $primary-accent-color;
+            box-shadow: $boxShadow;
+            border-color: $boxShadowColor;
         }
     }
     p {

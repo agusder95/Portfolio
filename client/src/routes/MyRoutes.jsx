@@ -4,8 +4,10 @@ import ScrollToTop from "../components/ScrollToTop/scrollToTop";
 import Layout from "../layout/layout";
 import SpinnerLoader from "../components/ux/spinnerLoader/spinnerLoader";
 
+
 const Home = lazy(() => import("../pages/home/home"));
 const Projects = lazy(() => import("../pages/projects/projects"));
+const Skills = lazy(() => import("../pages/skills/skills"));
 const Contact = lazy(() => import("../pages/contact/contact"));
 const MyRoutes = () => {
 
@@ -20,8 +22,8 @@ const MyRoutes = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
                     {/* <Route path="/resume" element={<About />} />
-                    <Route path="/projects" element={<Services />} />
-                    <Route path="/skills" element={<Contact />} /> */}
+                    <Route path="/projects" element={<Services />} /> */}
+                    <Route path="/skills" element={<Skills />} />
                     <Route path="/contact" element={<Contact />} />
                     {/* <Route path="*" element={<Home />} /> */}
                 </Routes>
