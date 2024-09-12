@@ -22,11 +22,3 @@
     }
 }
 
-.App {
-    &[data-theme="light"] {
-        @include lightTheme;
-    }
-    &[data-theme="dark"] {
-        @include darkTheme;
-    }
-}

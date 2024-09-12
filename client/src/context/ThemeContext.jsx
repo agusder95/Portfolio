@@ -14,6 +14,8 @@ export const ThemeContextProvider = ({ children }) => {
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme) {
       setTheme(storedTheme);
+    }else{
+      setTheme('light');
     }
   }, []);
 

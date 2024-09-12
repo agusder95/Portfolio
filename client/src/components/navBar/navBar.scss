@@ -1,15 +1,23 @@
 @import "../../assets/colors/colors.scss";
-.navBarWrapper{
+.navBarWrapper {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 3rem;
-    background-color: $main-orange;
+    /* background-color: $main-orange; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     z-index: 999;
-    @media screen and (min-width : 768px) {
+
+    &[data-theme="dark"] {
+        background-color: $main-White;
+    }
+    &[data-theme="light"] {
+        background-color: $main-Black;
+    }
+
+    @media screen and (min-width: 768px) {
         flex-direction: column;
         width: 3rem;
         height: 25rem;
@@ -17,18 +25,17 @@
         top: 30%;
         border-radius: 15px;
     }
-    @media screen and (min-width : 1500px) {
+    @media screen and (min-width: 1500px) {
         right: 2%;
     }
 }
 
 .react-icons {
     vertical-align: middle;
-    color: $main-Black;
     width: auto;
     height: 2rem;
 
-    &.active{
-        color: $main-White;
+    &.active {
+        color: $main-Gray !important;
     }
-  }
+}

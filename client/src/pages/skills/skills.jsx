@@ -5,9 +5,9 @@ const Skills = () => {
   return (
     <div className='skillsWrapper'>
       <h1>Skills</h1>
-      <h2>
-        I have experience with the following technologies and tools:
-      </h2>
+      <p>
+        I have experience with the following technologies and tools
+      </p>
       <div className='skillsList'>
         <Technologies />
       </div>

@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import "./assets/fonts/fonts.scss";
 * {
     box-sizing: border-box;
 }
 body {
-    font-family: "Nunito", sans-serif;
+    font-family:$primaryFont;
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -33,7 +33,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6{
+    font-family: $titleFont;
+    margin: 0;
+    padding: 0;
+}
 p {
     margin: 0;
     padding: 0;

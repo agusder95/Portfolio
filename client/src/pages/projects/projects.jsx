@@ -13,6 +13,7 @@ const Projects = () => {
     }, [width]);
     return (
         <div className="projectsWrapper">
+            <p style={{alignSelf:"flex-start", marginLeft:"10px"}}>The projects are also designed for mobile</p>
             <ActualProjects desktop={isMobile} />
             <div className="projectsDivider"></div>
             <FinishProjects desktop={isMobile} />

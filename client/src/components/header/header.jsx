@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <header className="header" data-theme={theme}>
-            <h1>Theme Switcher</h1>
+            <h1>Agustin De Robles</h1>
             <div className="switch">
                 <div className="switch-input" onClick={handleChange}>
                     <IconContext.Provider

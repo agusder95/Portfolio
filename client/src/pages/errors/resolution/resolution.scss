@@ -1,0 +1,10 @@
+.resolutionWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 5px;
+    p{
+        text-wrap: wrap;
+    }
+}
